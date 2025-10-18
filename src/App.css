@@ -1,0 +1,136 @@
+#root {
+  width: 100%;
+}
+
+#save_segment {
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background: transparent;
+    margin: 20px 0px 0px 20px;
+    border: 2px solid white;
+}
+
+#save_segment:hover{
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
+.open-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+/* Overlay (dim background) */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  /* right: -400px;  */
+  width: 400px;
+  height: 100vh;
+  background: #fff;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+  z-index: 20;
+  transition: right 0.3s ease;
+}
+
+.popup.show {
+  right: 0;
+}
+
+.popup-header {
+      display: flex;
+    align-items: center;
+    padding: 1rem 12px;
+    background: #39aebc;
+    color: white;
+}
+
+.popup-content {
+  padding: 20px;
+}
+.popup-back-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px 5px 0px 0px;
+}
+
+.schema-box {
+  padding: 12px;
+  border-radius: 6px;
+  color: white;
+  margin-top: 8px;
+}
+
+.schema-box select {
+  background: white;
+  color: #000;
+  border: 1px solid #ccc;
+}
+
+.segment-inp:focus {
+    outline-offset: unset !important;
+    outline: unset !important;
+}
+
+.segment-inp {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: white;
+    color: black;
+}
+
+.segment-dropdown {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: white;
+    color: black;
+}
+
+.segment-dropdown:focus {
+    outline-offset: unset !important;
+    outline: unset !important;
+}
+
+.save-segment-btn {
+    padding: 10px;
+    background: #4fb99b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.cancel-segment-btn {
+    padding: 8px 12px;
+    background: #fff;
+    color: #cc2e61;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.add-schema-btn {
+    background: transparent;
+    border: none;
+    color: #39aebc;
+    cursor: pointer;
+}
