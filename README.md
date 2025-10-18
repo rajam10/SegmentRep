@@ -50,7 +50,3 @@ The save logic posts to `/api/segments` with a JSON body:
 }
 ```
 
-
-Notes & next improvements
-- Consider adding a focus trap for full a11y (e.g., `focus-trap-react`).
-- Add validation (non-empty name, at least one schema) and user-facing error messages for network failures.
